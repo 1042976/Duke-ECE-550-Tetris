@@ -1,0 +1,41 @@
+-- Copyright (C) 1991-2009 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=4096;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+L00000002: 01110 00000 00000 00000 000000000000-- input $r3 keyboard_in
+L00000003: 01111 00000 00000 00000 000000000000--output $r4 lcd_data                        
+L00000007: 00110 01010 00000 00000 000000011100--addi $r10,$r0,28 left  
+L00000008: 00110 01011 00000 00000 000000100011 --addi $r11,$r0,35 right
+L00000009: 00110 01100 00000 00000 000000101001--addi $r12,$r0,41 space
+L0000000a: 00110 01101 00000 00000 000000000000--addi $r13,$r0,0 default
+L0000000c: 01001 00011 01010 00000 000000000011--beq $r3, $r10, L00000011
+L0000000e: 01001 00011 01011 00000 000000000100--beq $r3, $r11, L00000013
+L0000000f: 01001 00011 01100 00000 000000001111--beq $r3, $r12, L00000015
+L00000010: 01001 00011 01101 00000 000000010001--beq $r3, $r13, L00000017
+L00000011: 00110 00100 00000 00000 000000000000--addi $r4, $r0, 0 
+L00000012: 01100 00000 00000 00000 000000000010--j L00000002
+L00000013: 00110 00100 00000 00000 000000000001--addi $r4,$r0,1 
+L00000014: 01100 00000 00000 00000 000000000010--j L00000002
+L00000015: 00110 00100 00000 00000 000000000010--addi $r4,$r0,2
+L00000016: 01100 00000 00000 00000 000000000010--j L00000002
+L00000017: 00110 00100 00000 00000 000000000011--addi $r4,$r0,3
+END;

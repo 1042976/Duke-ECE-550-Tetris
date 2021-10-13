@@ -1,0 +1,6 @@
+module offset(ADDR_c, x, y);
+	//ADDR = 640*y + x;
+	output[15:0] ADDR_c;
+	input[15:0] x,y;
+	assign ADDR_c = x*y;
+endmodule
