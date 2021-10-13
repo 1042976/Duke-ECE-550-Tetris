@@ -1,4 +1,4 @@
-This project implements TEERIS GAME. Players can control the movement of the Blocks using key A(left), D(right), space(rotation). The scan code would be finally transferred to a 32-bit value(lcd_write_data). Then we let signal left equal to the first bit value, right equal to the second bit value and space equal to the third bit value.
+This project implements TEERIS GAME. Players can control the movement of the Blocks using key A(left), D(right), space(rotation).
 
 Below is the instruction with input ps2_out and output lcd_write_data:
  
