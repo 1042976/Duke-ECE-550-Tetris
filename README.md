@@ -1,6 +1,6 @@
 # TETRIS
 
-#### **Baseline (68%)**
+### **Baseline (68%)**
 
 The biggest portion of your grade will come from a baseline TETRIS game described below. The main gameplay (moving blocks) must be displayed on a VGA screen to receive points.
 
@@ -83,7 +83,7 @@ Your demo will be comprised of the following tasks:
 
   Your presentation will be graded based on your ability to articulate technical information in a concise and cohesive manner. Every group member must substantially participate in the presentation.
 
-#### **Add-Ons**
+### **Add-Ons**
 
 **Interrupts:** Leo modified the processor to cause the game to pause when he hits the “P” key on the keyboard. However, the pause key does not work when a player is moving blocks. He would get a score between 0 to 12% because he attempted interrupts, but the TAs decided to give him **8%**.
 
@@ -95,4 +95,4 @@ Your demo will be comprised of the following tasks:
 
 
 
-#### Our Grade: 91/100
+### Our Grade: 91/100
